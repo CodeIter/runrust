@@ -1,13 +1,16 @@
 [package]
 name = "runrust"
-version = "0.34.0"
+version = "10.34.0"
 edition = "2021"
 rust-version = "1.64"
-authors = ["Fredrik Fornwall <fredrik@fornwall.net>"]
+authors = [
+  "Muhammad Amin Boubaker <github.com/CodeIter>",
+  "Fredrik Fornwall <fredrik@fornwall.net>"
+]
 description = "Command-line tool to run Rust \"scripts\" which can make use of crates."
-homepage = "https://rust-script.org"
-documentation = "https://rust-script.org"
-repository = "https://github.com/fornwall/rust-script"
+homepage = "https://codeiter.github.io/rust-script"
+documentation = "https://codeiter.github.io/rust-script"
+repository = "https://github.com/CodeIter/rust-script"
 readme = "README.md"
 license = "MIT/Apache-2.0"
 keywords = ["cargo", "script"]
