@@ -27,7 +27,7 @@ With `runrust` Rust files and expressions can be executed just like a shell or P
 You can get an overview of the available options using the `--help` flag.
 
 ## News
-See the [changelog](https://github.com/fornwall/rust-script/blob/main/CHANGELOG.md) for information about releases and changes.
+See the [changelog](https://github.com/CodeIter/rust-script/commits/main) for information about releases and changes.
 
 ## Installation
 
