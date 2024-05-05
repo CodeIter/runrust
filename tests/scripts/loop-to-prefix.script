@@ -2,9 +2,9 @@
 set -e -u
 
 echo "First:"
-echo "line1\nline2" | rust-script --loop \
+echo "line1\nline2" | runrust --loop \
     "let mut n=0; move |l| {n+=1; println!(\"{:>6}: {}\",n,l.trim_end())}"
 
 echo "Second:"
-echo "line1\nline2" | rust-script --count --loop \
+echo "line1\nline2" | runrust --count --loop \
     "|l,n| println!(\"{:>6}: {}\", n, l.trim_end())"

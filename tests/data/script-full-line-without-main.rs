@@ -1,4 +1,4 @@
-#!/usr/bin/env rust-script
+#!/usr/bin/env runrust
 /// This is merged into a default manifest in order to form the full package manifest:
 ///
 /// ```cargo

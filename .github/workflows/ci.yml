@@ -45,7 +45,7 @@ jobs:
       uses: Homebrew/actions/setup-homebrew@master
     - name: Install hyperfine and just
       run: brew install hyperfine just
-    - name: Install rust-script
+    - name: Install runrust
       run: cargo install --locked --path .
     - name: Test examples
       run: ./test-examples.sh
@@ -94,19 +94,19 @@ jobs:
       if: runner.os == 'Windows'
       uses: actions/upload-artifact@v3
       with:
-        path: ./target/debug/rust-script.exe
+        path: ./target/debug/runrust.exe
         name: windows-binary
     - name: Upload macOS debug build
       if: runner.os == 'macOS'
       uses: actions/upload-artifact@v3
       with:
-        path: ./target/debug/rust-script
+        path: ./target/debug/runrust
         name: mac-binary
     - name: Upload Linux debug build
       if: runner.os == 'Linux'
       uses: actions/upload-artifact@v3
       with:
-        path: ./target/debug/rust-script
+        path: ./target/debug/runrust
         name: linux-binary
 
   test-install-file-association:
@@ -119,11 +119,11 @@ jobs:
     - name: Build debug
       run: cargo build
     - name: Install file association
-      run: ./target/debug/rust-script.exe --install-file-association
+      run: ./target/debug/runrust.exe --install-file-association
     - name: Run example script
       run: cmd.exe /C .\examples\hello.ers
     - name: Uninstall file association
-      run: ./target/debug/rust-script.exe --uninstall-file-association
+      run: ./target/debug/runrust.exe --uninstall-file-association
     - name: Run example script
       run: cmd.exe /C .\examples\hello.ers
       continue-on-error: true

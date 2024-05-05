@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e -u
 
-rust-script -e 'println!("hello");'
-rust-script -e '1+1'
-rust-script -e '1+2'
-rust-script -e '1+3'
-rust-script -d 'unicode-segmentation' -e 'unicode_segmentation::UnicodeSegmentation::graphemes("a̐éö̲", true).count()'
+runrust -e 'println!("hello");'
+runrust -e '1+1'
+runrust -e '1+2'
+runrust -e '1+3'
+runrust -d 'unicode-segmentation' -e 'unicode_segmentation::UnicodeSegmentation::graphemes("a̐éö̲", true).count()'

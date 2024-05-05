@@ -45,7 +45,7 @@ pub fn install_file_association() -> MainResult<()> {
         }
     }
 
-    println!("Created rust-script registry entry.");
+    println!("Created runrust registry entry.");
     println!("- Handler set to: {}", rust_script_path);
 
     Ok(())
@@ -70,7 +70,7 @@ pub fn uninstall_file_association() -> MainResult<()> {
     if ignored_missing {
         println!("Ignored some missing registry entries.");
     }
-    println!("Deleted rust-script registry entry.");
+    println!("Deleted runrust registry entry.");
 
     Ok(())
 }

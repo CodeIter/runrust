@@ -16,4 +16,4 @@ fn main() {
 }
 EOF
 
-rust-script ./subdir/myscript.rs
+runrust ./subdir/myscript.rs

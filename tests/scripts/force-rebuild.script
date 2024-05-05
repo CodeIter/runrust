@@ -8,10 +8,10 @@ cd "$mytmpdir"
 
 printf 'let msg = option_env!("_RUST_SCRIPT_TEST_MESSAGE").unwrap_or("undefined"); println!("msg = {}", msg);' > script.rs
 
-rust-script script.rs
+runrust script.rs
 
 export _RUST_SCRIPT_TEST_MESSAGE=hello
 
-rust-script script.rs
+runrust script.rs
 
-rust-script --force script.rs
+runrust --force script.rs
