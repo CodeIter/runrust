@@ -63,7 +63,7 @@ fn try_main() -> MainResult<i32> {
     if args.clear_cache {
         clean_cache(0)?;
         if args.script.is_none() {
-            println!("rust-script cache cleared.");
+            println!("runrust cache cleared.");
             return Ok(0);
         }
     }

@@ -1,5 +1,5 @@
 /*!
-This module is concerned with how `rust-script` extracts the manfiest from a script file.
+This module is concerned with how `runrust` extracts the manfiest from a script file.
 */
 use regex;
 
@@ -185,7 +185,7 @@ version = "0.1.0""#,
     );
 
     assert_eq!(
-        si!(f(r#"#!/usr/bin/env rust-script
+        si!(f(r#"#!/usr/bin/env runrust
 fn main() {}"#)),
         r!(
             format!(
@@ -412,7 +412,7 @@ version = "0.1.0""#,
     );
 
     assert_eq!(
-        si!(f(r#"#!/usr/bin/env rust-script
+        si!(f(r#"#!/usr/bin/env runrust
 println!("Hello")"#)),
         r!(
             format!(

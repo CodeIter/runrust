@@ -10,4 +10,4 @@ printf '[toolchain]\nchannel = "non-existing"' > rust-toolchain.toml
 
 printf 'println!("hello, world");' > script.rs
 
-rust-script script.rs
+runrust script.rs

@@ -117,7 +117,7 @@ impl Args {
                 .requires("expr_or_loop")
             )
 
-            // Options that change how rust-script itself behaves, and don't alter what the script will do.
+            // Options that change how runrust itself behaves, and don't alter what the script will do.
             .arg(Arg::new("clear-cache")
                 .help("Clears out the script cache")
                 .long("clear-cache")
@@ -176,16 +176,14 @@ impl Args {
         let app = app
             .arg(
                 Arg::new("install-file-association")
-                    .help("Install a file association so that rust-script executes .ers files")
+                    .help("Install a file association so that runrust executes .ers files")
                     .long("install-file-association")
                     .exclusive(true)
                     .action(ArgAction::SetTrue),
             )
             .arg(
                 Arg::new("uninstall-file-association")
-                    .help(
-                        "Uninstall the file association that makes rust-script execute .ers files",
-                    )
+                    .help("Uninstall the file association that makes runrust execute .ers files")
                     .long("uninstall-file-association")
                     .exclusive(true)
                     .action(ArgAction::SetTrue),

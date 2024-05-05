@@ -1,4 +1,4 @@
-#!/usr/bin/env rust-script
+#!/usr/bin/env runrust
 //! ```cargo
 //! [dependencies]
 //! libc = { version = "0.2", default-features = false }

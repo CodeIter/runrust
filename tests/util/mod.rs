@@ -15,7 +15,7 @@ macro_rules! rust_script {
             let out = {
                 let target_dir = ::std::env::var("CARGO_TARGET_DIR")
                     .unwrap_or_else(|_| String::from("target"));
-                let mut cmd = Command::new(format!("{}/debug/rust-script", target_dir));
+                let mut cmd = Command::new(format!("{}/debug/runrust", target_dir));
                 $(
                     cmd.arg($args);
                 )*
@@ -30,12 +30,12 @@ macro_rules! rust_script {
             };
 
             if let Ok(out) = out.as_ref() {
-                println!("rust-script cmd: {}", cmd_str);
-                println!("rust-script stdout:");
+                println!("runrust cmd: {}", cmd_str);
+                println!("runrust stdout:");
                 println!("-----");
                 println!("{}", out.stdout);
                 println!("-----");
-                println!("rust-script stderr:");
+                println!("runrust stderr:");
                 println!("-----");
                 println!("{}", out.stderr);
                 println!("-----");

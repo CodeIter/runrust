@@ -58,7 +58,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
-          bin: rust-script
+          bin: runrust
           target: ${{ matrix.target }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
