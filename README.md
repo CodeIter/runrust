@@ -8,7 +8,7 @@
 
 - `runrust` :
   - [![runrust CI](https://github.com/CodeIter/runrust/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/CodeIter/runrust/actions/workflows/ci.yml)
-    [![Crates.io/runrust](https://img.shields.io/crates/v/rust.svg)](https://crates.io/crates/runrust)
+    [![Crates.io/runrust](https://img.shields.io/crates/v/runrust.svg)](https://crates.io/crates/runrust)
 
 Run Rust script files without any setup or explicit compilation step,
 with seamless use of crates specified as dependencies inside the scripts.
