@@ -2,7 +2,7 @@
 name = "runrust"
 version = "10.34.0"
 edition = "2021"
-rust-version = "1.64"
+rust-version = "1.76"
 authors = [
   "Muhammad Amin Boubaker <github.com/CodeIter>",
   "Fredrik Fornwall <fredrik@fornwall.net>"
