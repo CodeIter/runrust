@@ -27,7 +27,7 @@ With `runrust` Rust files and expressions can be executed just like a shell or P
 You can get an overview of the available options using the `--help` flag.
 
 ## News
-See the [changelog](https://github.com/CodeIter/rust-script/commits/main) for information about releases and changes.
+See the [changelog](https://github.com/CodeIter/runrust/commits/main) for information about releases and changes.
 
 ## Installation
 
@@ -173,6 +173,6 @@ The following environment variables are provided to scripts by `runrust`:
 
 ## Troubleshooting
 
-Please report all issues on [the GitHub issue tracker](https://github.com/fornwall/rust-script/issues).
+Please report all issues on [the GitHub issue tracker](https://github.com/CodeIter/runrust/issues).
 
 If relevant, run with the `RUST_LOG=rust_script=trace` environment variable set to see verbose log output and attach that output to an issue.

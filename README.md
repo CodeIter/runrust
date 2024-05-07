@@ -7,7 +7,7 @@
     [![Crates.io/rust-script](https://img.shields.io/crates/v/rust-script.svg)](https://crates.io/crates/rust-script)
 
 - `runrust` :
-  - [![runrust CI](https://github.com/CodeIter/rust-script/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/CodeIter/rust-script/actions/workflows/ci.yml)
+  - [![runrust CI](https://github.com/CodeIter/runrust/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/CodeIter/runrust/actions/workflows/ci.yml)
     [![Crates.io/runrust](https://img.shields.io/crates/v/rust.svg)](https://crates.io/crates/runrust)
 
 Run Rust script files without any setup or explicit compilation step,
@@ -47,7 +47,7 @@ A random number: 9240261453149857564
 
 Rust version 1.64 or newer required.
 
-See the [documentation at rust-script.org](https://codeiter.github.io/rust-script).
+See the [documentation at codeiter.github.io/runrust](https://codeiter.github.io/runrust).
 
 ## Related projects
 - [rust-script](https://github.com/fornwall/rust-script) - the original project that `runrust` was forked from.
